@@ -15,6 +15,6 @@
 
 	<hr />
 
-	<p>Las publicaciones más antiguas están disponibles en el<a href="${content.rootpath}${config.archive_file}">archivo</a>.</p>
+	<p>Las publicaciones más antiguas están disponibles en el <a href="${content.rootpath}${config.archive_file}">archivo</a>.</p>
 
 <#include "footer.ftl">
