@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8"/>
-    <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>JBake</#if></title>
+    <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>HABV</#if></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Herman Barrantes">
     <meta name="keywords" content="">
     <meta name="generator" content="JBake">
 
@@ -29,4 +29,3 @@
   </head>
   <body onload="prettyPrint()">
     <div id="wrap">
-   
