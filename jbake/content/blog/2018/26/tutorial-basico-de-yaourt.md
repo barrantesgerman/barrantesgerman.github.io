@@ -7,13 +7,13 @@ status=published
 
 ## ¿Qué es Yaourt?
 
-**Yaourt** (*Yet AnOther User Repository Tool*, `Yogurt` en francés) es un programa de interfaz de línea de comandos que completa **pacman** para la instalar software en Archlinux y derivadas.
+`Yaourt` (*Yet AnOther User Repository Tool*, **Yogurt** en francés) es un programa de interfaz de línea de comandos que completa `pacman` para la instalar software en Archlinux y derivadas.
 
 > Actualmente, el proyecto se encuentra descontinuado, por lo que se recomiendan otras herramientas similares como  [aurman](https://github.com/polygamma/aurman), [pakku](https://github.com/kitsunyan/pakku) o [yay](https://github.com/Jguer/yay).
 
 ## Como instalar
 
-Yaourt se puede instalar desde pacman ejecutando:
+`Yaourt` se puede instalar desde `pacman` ejecutando:
 
 ```bash
 sudo pacman -Syy
@@ -72,7 +72,5 @@ yaourt -Qdt
 # con pacman
 sudo pacman -Qdt
 ```
-
-
 
 Finalmente les dejo el [Link](https://github.com/archlinuxfr/yaourt) de repositorio en **Github**

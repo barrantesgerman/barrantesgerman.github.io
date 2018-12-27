@@ -6,8 +6,8 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>mié, 26 dic 2018 19:10:30 -0600</pubDate>
-    <lastBuildDate>mié, 26 dic 2018 19:10:30 -0600</lastBuildDate>
+    <pubDate>mié, 26 dic 2018 19:49:13 -0600</pubDate>
+    <lastBuildDate>mié, 26 dic 2018 19:49:13 -0600</lastBuildDate>
 
     <item>
       <title>Tutorial básico de Yaourt</title>
@@ -16,12 +16,12 @@
       <guid isPermaLink="false">blog/2018/26/tutorial-basico-de-yaourt.html</guid>
       	<description>
 	&lt;h2&gt;¿Qué es Yaourt?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Yaourt&lt;/strong&gt; (&lt;em&gt;Yet AnOther User Repository Tool&lt;/em&gt;, &lt;code&gt;Yogurt&lt;/code&gt; en francés) es un programa de interfaz de línea de comandos que completa &lt;strong&gt;pacman&lt;/strong&gt; para la instalar software en Archlinux y derivadas.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Yaourt&lt;/code&gt; (&lt;em&gt;Yet AnOther User Repository Tool&lt;/em&gt;, &lt;strong&gt;Yogurt&lt;/strong&gt; en francés) es un programa de interfaz de línea de comandos que completa &lt;code&gt;pacman&lt;/code&gt; para la instalar software en Archlinux y derivadas.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Actualmente, el proyecto se encuentra descontinuado, por lo que se recomiendan otras herramientas similares como  &lt;a href=&quot;https://github.com/polygamma/aurman&quot;&gt;aurman&lt;/a&gt;, &lt;a href=&quot;https://github.com/kitsunyan/pakku&quot;&gt;pakku&lt;/a&gt; o &lt;a href=&quot;https://github.com/Jguer/yay&quot;&gt;yay&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;Como instalar&lt;/h2&gt;
-&lt;p&gt;Yaourt se puede instalar desde pacman ejecutando:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Yaourt&lt;/code&gt; se puede instalar desde &lt;code&gt;pacman&lt;/code&gt; ejecutando:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo pacman -Syy
 sudo pacman -S yaourt
 &lt;/code&gt;&lt;/pre&gt;
