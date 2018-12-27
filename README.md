@@ -18,8 +18,16 @@ $ sdk install jbake
 Para descargar el repositorio de [Github](https://github.com/barrantesgerman/barrantesgerman.github.io/) se debe ejecutar el siguiente comando:
 
 ```bash
-$ git clone https://github.com/barrantesgerman/barrantesgerman.github.io habv
+$ git clone https://github.com/barrantesgerman/barrantesgerman.github.io.git habv
 ```
+
+## Agregar contenido al sitio
+
+[JBake](https://jbake.org/) soporta varios formatos, para este sitio en particular se prefiere el uso de [Markdown](http://daringfireball.net/projects/markdown/syntax), por lo que se recomienda el uso de editores de texto que soporte el formato, como [Typora](https://typora.io/).
+
+Dado que [JBake](https://jbake.org/) requiere un formato especial al inicio del documento, se creó una carpeta en `habv/jbake/original/` para guardar el contenido original sin este formato especial.
+
+Cuando el contenido está listo para publicar, se mueve a la carpeta `habv/jbake/content/blog/año/mes/día/` y se coloca el formato especial al inicio del documento.
 
 ## Compilar y ejecutar el sitio localmente
 
