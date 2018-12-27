@@ -6,9 +6,65 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>mié, 19 dic 2018 21:16:03 -0600</pubDate>
-    <lastBuildDate>mié, 19 dic 2018 21:16:03 -0600</lastBuildDate>
+    <pubDate>mié, 26 dic 2018 18:56:31 -0600</pubDate>
+    <lastBuildDate>mié, 26 dic 2018 18:56:31 -0600</lastBuildDate>
 
+    <item>
+      <title>Tutorial básico de Yaourt</title>
+      <link>https://www.habv.org/blog/2018/26/tutorial-basico-de-yaourt.html</link>
+      <pubDate>mié, 26 dic 2018 00:00:00 -0600</pubDate>
+      <guid isPermaLink="false">blog/2018/26/tutorial-basico-de-yaourt.html</guid>
+      	<description>
+	&lt;h2&gt;¿Qué es Yaourt?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Yaourt&lt;/strong&gt; (&lt;em&gt;Yet AnOther User Repository Tool&lt;/em&gt;, &lt;code&gt;Yogurt&lt;/code&gt; en francés) es un programa de interfaz de línea de comandos que completa &lt;strong&gt;pacman&lt;/strong&gt; para la instalar software en Archlinux y derivadas.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Actualmente, el proyecto se encuentra descontinuado, por lo que se recomiendan otras herramientas similares como  &lt;a href=&quot;https://github.com/polygamma/aurman&quot;&gt;aurman&lt;/a&gt;, &lt;a href=&quot;https://github.com/kitsunyan/pakku&quot;&gt;pakku&lt;/a&gt; o &lt;a href=&quot;https://github.com/Jguer/yay&quot;&gt;yay&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Como instalar&lt;/h2&gt;
+&lt;p&gt;Yaourt se puede instalar desde pacman ejecutando:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo pacman -Syy
+sudo pacman -S yaourt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Uso básico&lt;/h2&gt;
+&lt;p&gt;Ahora bien, esta es una lista de comandos básicos comparados contra los tradicionales comandos de &lt;code&gt;pacman&lt;/code&gt;:&lt;/p&gt;
+&lt;h3&gt;Buscar paquetes&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
+yaourt -Ss paquete
+# o simplemente
+yaourt paquete
+# con pacman
+sudo pacman -Ss paquete
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Actualizar sistema&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
+yaourt -Syyu
+# actualizar tambien paquetes de AUR
+yaourt -Syyua
+# con pacman
+sudo pacman -Syyu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Instalar/reinstalar paquete&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
+yaourt -S paquete
+# con pacman
+sudo pacman -S paquete
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Eliminar paquetes y sus dependencias&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
+yaourt -Rnsc paquete
+# con pacman
+sudo pacman -Rnsc paquete
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Buscar paquetes huerfanos&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
+yaourt -Qdt
+# con pacman
+sudo pacman -Qdt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finalmente les dejo el &lt;a href=&quot;https://github.com/archlinuxfr/yaourt&quot;&gt;Link&lt;/a&gt; de repositorio en &lt;strong&gt;Github&lt;/strong&gt;&lt;/p&gt;
+
+	</description>
+    </item>
     <item>
       <title>Hola Mundo</title>
       <link>https://www.habv.org/blog/2018/19/hola-mundo.html</link>
