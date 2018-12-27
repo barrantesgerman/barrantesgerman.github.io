@@ -6,14 +6,14 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>mié, 26 dic 2018 19:49:13 -0600</pubDate>
-    <lastBuildDate>mié, 26 dic 2018 19:49:13 -0600</lastBuildDate>
+    <pubDate>jue, 27 dic 2018 09:33:58 -0600</pubDate>
+    <lastBuildDate>jue, 27 dic 2018 09:33:58 -0600</lastBuildDate>
 
     <item>
       <title>Tutorial básico de Yaourt</title>
-      <link>https://www.habv.org/blog/2018/26/tutorial-basico-de-yaourt.html</link>
+      <link>https://www.habv.org/blog/2018/12/26/tutorial-basico-de-yaourt.html</link>
       <pubDate>mié, 26 dic 2018 00:00:00 -0600</pubDate>
-      <guid isPermaLink="false">blog/2018/26/tutorial-basico-de-yaourt.html</guid>
+      <guid isPermaLink="false">blog/2018/12/26/tutorial-basico-de-yaourt.html</guid>
       	<description>
 	&lt;h2&gt;¿Qué es Yaourt?&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Yaourt&lt;/code&gt; (&lt;em&gt;Yet AnOther User Repository Tool&lt;/em&gt;, &lt;strong&gt;Yogurt&lt;/strong&gt; en francés) es un programa de interfaz de línea de comandos que completa &lt;code&gt;pacman&lt;/code&gt; para la instalar software en Archlinux y derivadas.&lt;/p&gt;
@@ -67,9 +67,9 @@ sudo pacman -Qdt
     </item>
     <item>
       <title>Hola Mundo</title>
-      <link>https://www.habv.org/blog/2018/19/hola-mundo.html</link>
+      <link>https://www.habv.org/blog/2018/12/19/hola-mundo.html</link>
       <pubDate>mié, 19 dic 2018 00:00:00 -0600</pubDate>
-      <guid isPermaLink="false">blog/2018/19/hola-mundo.html</guid>
+      <guid isPermaLink="false">blog/2018/12/19/hola-mundo.html</guid>
       	<description>
 	&lt;p&gt;Primera publicación del Blog ;)&lt;/p&gt;
 
