@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JBake</title>
+    <title>HABV</title>
     <link>https://www.habv.org</link>
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
-    <description>JBake Bootstrap Template</description>
-    <language>en-gb</language>
-    <pubDate>jue, 27 dic 2018 09:33:58 -0600</pubDate>
-    <lastBuildDate>jue, 27 dic 2018 09:33:58 -0600</lastBuildDate>
+    <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
+    <language>es-cr</language>
+    <pubDate>sáb, 29 dic 2018 09:49:21 -0600</pubDate>
+    <lastBuildDate>sáb, 29 dic 2018 09:49:21 -0600</lastBuildDate>
 
     <item>
       <title>Tutorial básico de Yaourt</title>
@@ -76,5 +76,5 @@ sudo pacman -Qdt
 	</description>
     </item>
 
-  </channel> 
+  </channel>
 </rss>

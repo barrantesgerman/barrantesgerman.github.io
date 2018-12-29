@@ -2,16 +2,20 @@
 
 	<#include "menu.ftl">
 
-	<div class="page-header">
+	<header class="page-header">
 		<h1>Blog</h1>
-	</div>
+	</header>
 	<#list posts as post>
-  		<#if (post.status == "published")>
-  			<a href="${post.uri}"><h1><#escape x as x?xml>${post.title}</#escape></h1></a>
-  			<p>${post.date?string("dd MMMM yyyy")}</p>
-  			<p>${post.body}</p>
-  		</#if>
-  	</#list>
+		<#if (post.status == "published")>
+		<article>
+			<header>
+				<a href="${post.uri}"><h1><#escape x as x?xml>${post.title}</#escape></h1></a>
+				<p><em><time datetime="${post.date?string("yyyy-MM-dd")}">${post.date?string("dd MMMM yyyy")}</time></em></p>
+			</header>
+			${post.body}
+		</article>
+		</#if>
+  </#list>
 
 	<hr />
 
