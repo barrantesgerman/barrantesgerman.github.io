@@ -3,7 +3,7 @@
 	<#include "menu.ftl">
 
 	<header class="page-header">
-		<h1>Etiquetas: ${tag}</h1>
+		<h1>Etiqueta: ${tag}</h1>
 	</header>
 
 	<!--<ul>-->
