@@ -6,9 +6,28 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
     <language>es-cr</language>
-    <pubDate>sáb, 5 ene 2019 15:55:26 -0600</pubDate>
-    <lastBuildDate>sáb, 5 ene 2019 15:55:26 -0600</lastBuildDate>
+    <pubDate>sáb, 5 ene 2019 16:02:04 -0600</pubDate>
+    <lastBuildDate>sáb, 5 ene 2019 16:02:04 -0600</lastBuildDate>
 
+    <item>
+      <title>Longitud máxima de una dirección IP</title>
+      <link>https://www.habv.org/blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html</link>
+      <pubDate>sáb, 5 ene 2019 00:00:00 -0600</pubDate>
+      <guid isPermaLink="false">blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html</guid>
+      	<description>
+	&lt;p&gt;Si estas diseñando una base de datos de un sitio WEB, y requieres almacenar en un campo de una tabla el valor de la IP de las personas que visitan el sitio, debes de especificar el tamaño máximo de ese campo, es ahí donde surge la pregunta: ¿Cuál es el tamaño máximo de una dirección IP?&lt;/p&gt;
+&lt;p&gt;Actualmente, los protocolos más usados en Internet son &lt;a href=&quot;http://en.wikipedia.org/wiki/IPv4&quot;&gt;IPv4&lt;/a&gt; u &lt;a href=&quot;http://en.wikipedia.org/wiki/IPv6&quot;&gt;IPv6&lt;/a&gt;, por lo que usaremos estos como base.&lt;/p&gt;
+&lt;h2&gt;IPv4&lt;/h2&gt;
+&lt;p&gt;Para el caso de IPv4, la dirección esta compuesta por 32bit o 4 octetos que cumple el siguiente formato: &lt;code&gt;255.255.255.255&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Por lo que la dirección ocupará una &lt;strong&gt;longitud máxima 15 caracteres&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;IPv6&lt;/h2&gt;
+&lt;p&gt;Por su parte, IPv6 esta compuesta por 64bit de prefijo de red y 64bit de dirección, separados por el signo : (dos puntos), y cumple el siguiente formato: &lt;code&gt;2001:0db8:85a3:0000:0000:8a2e:0370:7334&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Por lo que la dirección ocupará una &lt;strong&gt;longitud máxima de 39 caracteres&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Solución&lt;/h2&gt;
+&lt;p&gt;Es aconsejable crear el campo de al menos &lt;strong&gt;39 caracteres&lt;/strong&gt; para almacenar ambos tipos de protocolos.&lt;/p&gt;
+
+	</description>
+    </item>
     <item>
       <title>Tutorial básico de Yaourt</title>
       <link>https://www.habv.org/blog/2018/12/26/tutorial-basico-de-yaourt.html</link>
