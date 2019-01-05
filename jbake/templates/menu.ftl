@@ -8,13 +8,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>">HABV</a>
+          <a class="navbar-brand" href="/">HABV</a>
         </div><!--/.navbar-header -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html">Inicio</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>about.html">Acerca de</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.feed_file}">Subscribirse</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/about.html">Acerca de</a></li>
+            <li><a href="/${config.feed_file}">Subscribirse</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--/.container -->
