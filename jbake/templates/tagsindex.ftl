@@ -1,16 +1,17 @@
 <#include "header.ftl">
-
-	<#include "menu.ftl">
-
-	<header class="page-header">
-		<h1>Etiquetas</h1>
-	</header>
-
-	<!--<ul>-->
-	<ul>
-		<#list tags?sort_by("name") as tag>
-		<li><a href="/${tag.uri}">${tag.name}</a></li>
-		</#list>
-	</ul>
-
+<#include "sidebar.ftl">
+<div class="content container">
+	<div class="links">
+	  <h1>Etiquetas</h1>
+	  <ul class="links-posts">
+	<#list tags?sort_by("name") as tag>
+	      <li>
+	        <h3>
+	          <a href="/${tag.uri}"><#escape x as x?xml>${tag.name}</#escape></a>
+	        </h3>
+	      </li>
+	</#list>
+	  </ul>
+	</div>
+</div>
 <#include "footer.ftl">

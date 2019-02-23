@@ -1,16 +1,11 @@
 <#include "header.ftl">
-
-	<#include "menu.ftl">
-
+<#include "sidebar.ftl">
+<div class="content container">
 	<article>
-		<header>
-			<div class="page-header">
-				<h1><#escape x as x?xml>${content.title}</#escape></h1>
-			</div>
-			<p><em><time datetime="${content.date?string("yyyy-MM-dd")}">${content.date?string("dd MMMM yyyy")}</time></em></p>
+		<header class="post">
+			<h1 class="page-title"><#escape x as x?xml>${content.title}</#escape></h1>
 		</header>
 		${content.body}
 	</article>
-	<hr />
-
+</div>
 <#include "footer.ftl">
