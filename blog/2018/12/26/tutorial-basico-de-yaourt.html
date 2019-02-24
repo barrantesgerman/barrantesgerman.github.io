@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/css/poole.css">
     <link rel="stylesheet" href="/css/hyde.css">
     <link rel="stylesheet" href="/css/prism.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
