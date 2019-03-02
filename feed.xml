@@ -6,16 +6,16 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
     <language>es-cr</language>
-    <pubDate>sáb, 23 feb 2019 20:12:35 -0600</pubDate>
-    <lastBuildDate>sáb, 23 feb 2019 20:12:35 -0600</lastBuildDate>
+    <pubDate>vie, 1 mar 2019 22:18:21 -0600</pubDate>
+    <lastBuildDate>vie, 1 mar 2019 22:18:21 -0600</lastBuildDate>
 
     <item>
       <title>Longitud máxima de una dirección IP</title>
       <link>https://www.habv.org/blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html</link>
       <pubDate>sáb, 5 ene 2019 00:00:00 -0600</pubDate>
       <guid isPermaLink="false">blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html</guid>
-      	<description>
-	&lt;p&gt;Si estas diseñando una base de datos de un sitio WEB, y requieres almacenar en un campo de una tabla el valor de la IP de las personas que visitan el sitio, debes de especificar el tamaño máximo de ese campo, es ahí donde surge la pregunta: ¿Cuál es el tamaño máximo de una dirección IP?&lt;/p&gt;
+      <description>
+&lt;p&gt;Si estas diseñando una base de datos de un sitio WEB, y requieres almacenar en un campo de una tabla el valor de la IP de las personas que visitan el sitio, debes de especificar el tamaño máximo de ese campo, es ahí donde surge la pregunta: ¿Cuál es el tamaño máximo de una dirección IP?&lt;/p&gt;
 &lt;p&gt;Actualmente, los protocolos más usados en Internet son &lt;a href=&quot;http://en.wikipedia.org/wiki/IPv4&quot;&gt;IPv4&lt;/a&gt; u &lt;a href=&quot;http://en.wikipedia.org/wiki/IPv6&quot;&gt;IPv6&lt;/a&gt;, por lo que usaremos estos como base.&lt;/p&gt;
 &lt;h2&gt;IPv4&lt;/h2&gt;
 &lt;p&gt;Para el caso de IPv4, la dirección esta compuesta por 32bit o 4 octetos que cumple el siguiente formato: &lt;code&gt;255.255.255.255&lt;/code&gt;&lt;/p&gt;
@@ -26,15 +26,15 @@
 &lt;h2&gt;Solución&lt;/h2&gt;
 &lt;p&gt;Es aconsejable crear el campo de al menos &lt;strong&gt;39 caracteres&lt;/strong&gt; para almacenar ambos tipos de protocolos.&lt;/p&gt;
 
-	</description>
+      </description>
     </item>
     <item>
       <title>Tutorial básico de Yaourt</title>
       <link>https://www.habv.org/blog/2018/12/26/tutorial-basico-de-yaourt.html</link>
       <pubDate>mié, 26 dic 2018 00:00:00 -0600</pubDate>
       <guid isPermaLink="false">blog/2018/12/26/tutorial-basico-de-yaourt.html</guid>
-      	<description>
-	&lt;h2&gt;¿Qué es Yaourt?&lt;/h2&gt;
+      <description>
+&lt;h2&gt;¿Qué es Yaourt?&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;yaourt&lt;/code&gt; (&lt;em&gt;Yet AnOther User Repository Tool&lt;/em&gt;, &lt;strong&gt;Yogurt&lt;/strong&gt; en francés) es un programa de interfaz de línea de comandos que completa &lt;code&gt;pacman&lt;/code&gt; para la instalar software en Archlinux y derivadas.&lt;/p&gt;
 &lt;p&gt;A diferencia de &lt;code&gt;pacman&lt;/code&gt; que instala paquetes solamente de los repositorios oficiales, &lt;code&gt;yaourt&lt;/code&gt; permite instalar paquetes desde &lt;strong&gt;Arch User Repository&lt;/strong&gt; (&lt;a href=&quot;https://wiki.archlinux.org/index.php/Arch_User_Repository_(Espa%C3%B1ol)&quot;&gt;AUR&lt;/a&gt;) que es un repositorio promovido por los usuarios de la comunidad de Arch.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -89,17 +89,17 @@ $ sudo pacman -Qdt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Finalmente les dejo el &lt;a href=&quot;https://github.com/archlinuxfr/yaourt&quot;&gt;Link&lt;/a&gt; de repositorio en &lt;strong&gt;Github&lt;/strong&gt;.&lt;/p&gt;
 
-	</description>
+      </description>
     </item>
     <item>
       <title>Hola Mundo</title>
       <link>https://www.habv.org/blog/2018/12/19/hola-mundo.html</link>
       <pubDate>mié, 19 dic 2018 00:00:00 -0600</pubDate>
       <guid isPermaLink="false">blog/2018/12/19/hola-mundo.html</guid>
-      	<description>
-	&lt;p&gt;Primera publicación del Blog ;)&lt;/p&gt;
+      <description>
+&lt;p&gt;Primera publicación del Blog ;)&lt;/p&gt;
 
-	</description>
+      </description>
     </item>
 
   </channel>

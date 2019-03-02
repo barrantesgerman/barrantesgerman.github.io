@@ -3,15 +3,15 @@
 <div class="content container">
 
 <#list posts as post>
-	<#if (post.status == "published")>
-	<article>
-		<header class="post">
-			<a href="${post.uri}"><h1 class="post-title"><#escape x as x?xml>${post.title}</#escape></h1></a>
-			<span class="post-date"><time datetime="${post.date?string("yyyy-MM-dd")}">${post.date?string("dd MMMM yyyy")}</time></span>
-		</header>
-		${post.body}
-	</article>
-	</#if>
+  <#if (post.status == "published")>
+  <article class="post">
+    <header>
+      <a href="${post.uri}"><h1 class="post-title"><#escape x as x?xml>${post.title}</#escape></h1></a>
+      <span class="post-date"><time datetime="${post.date?string("yyyy-MM-dd")}">${post.date?string("dd MMMM yyyy")}</time></span>
+    </header>
+    ${post.body}
+  </article>
+  </#if>
 </#list>
 
 <hr />

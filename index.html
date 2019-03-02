@@ -11,7 +11,6 @@
     <meta name="keywords" content="">
     <meta name="generator" content="JBake">
 
-    <!-- Le styles -->
     <link rel="stylesheet" href="/css/poole.css">
     <link rel="stylesheet" href="/css/hyde.css">
     <link rel="stylesheet" href="/css/prism.css">
@@ -29,7 +28,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-<div class="sidebar">
+<aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
@@ -40,22 +39,22 @@
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item active" href="https://www.habv.org">Inicio</a>
-			<a class="sidebar-nav-item" href="/about.html">Acerca de</a>
-			<a class="sidebar-nav-item" href="/feed.xml">Subscribirse</a>
+      <a class="sidebar-nav-item" href="/about.html">Acerca de</a>
+      <a class="sidebar-nav-item" href="/feed.xml">Subscribirse</a>
       <span class="sidebar-nav-item">Versión v1.0.0</span>
     </nav>
 
     <p>&copy; 2018. Todos los derechos reservados.</p>
   </div>
-</div>
+</aside>
 <div class="content container">
 
-	<article>
-		<header class="post">
-			<a href="blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html"><h1 class="post-title">Longitud máxima de una dirección IP</h1></a>
-			<span class="post-date"><time datetime="2019-01-05">05 enero 2019</time></span>
-		</header>
-		<p>Si estas diseñando una base de datos de un sitio WEB, y requieres almacenar en un campo de una tabla el valor de la IP de las personas que visitan el sitio, debes de especificar el tamaño máximo de ese campo, es ahí donde surge la pregunta: ¿Cuál es el tamaño máximo de una dirección IP?</p>
+  <article class="post">
+    <header>
+      <a href="blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html"><h1 class="post-title">Longitud máxima de una dirección IP</h1></a>
+      <span class="post-date"><time datetime="2019-01-05">05 enero 2019</time></span>
+    </header>
+    <p>Si estas diseñando una base de datos de un sitio WEB, y requieres almacenar en un campo de una tabla el valor de la IP de las personas que visitan el sitio, debes de especificar el tamaño máximo de ese campo, es ahí donde surge la pregunta: ¿Cuál es el tamaño máximo de una dirección IP?</p>
 <p>Actualmente, los protocolos más usados en Internet son <a href="http://en.wikipedia.org/wiki/IPv4">IPv4</a> u <a href="http://en.wikipedia.org/wiki/IPv6">IPv6</a>, por lo que usaremos estos como base.</p>
 <h2>IPv4</h2>
 <p>Para el caso de IPv4, la dirección esta compuesta por 32bit o 4 octetos que cumple el siguiente formato: <code>255.255.255.255</code></p>
@@ -66,13 +65,13 @@
 <h2>Solución</h2>
 <p>Es aconsejable crear el campo de al menos <strong>39 caracteres</strong> para almacenar ambos tipos de protocolos.</p>
 
-	</article>
-	<article>
-		<header class="post">
-			<a href="blog/2018/12/26/tutorial-basico-de-yaourt.html"><h1 class="post-title">Tutorial básico de Yaourt</h1></a>
-			<span class="post-date"><time datetime="2018-12-26">26 diciembre 2018</time></span>
-		</header>
-		<h2>¿Qué es Yaourt?</h2>
+  </article>
+  <article class="post">
+    <header>
+      <a href="blog/2018/12/26/tutorial-basico-de-yaourt.html"><h1 class="post-title">Tutorial básico de Yaourt</h1></a>
+      <span class="post-date"><time datetime="2018-12-26">26 diciembre 2018</time></span>
+    </header>
+    <h2>¿Qué es Yaourt?</h2>
 <p><code>yaourt</code> (<em>Yet AnOther User Repository Tool</em>, <strong>Yogurt</strong> en francés) es un programa de interfaz de línea de comandos que completa <code>pacman</code> para la instalar software en Archlinux y derivadas.</p>
 <p>A diferencia de <code>pacman</code> que instala paquetes solamente de los repositorios oficiales, <code>yaourt</code> permite instalar paquetes desde <strong>Arch User Repository</strong> (<a href="https://wiki.archlinux.org/index.php/Arch_User_Repository_(Espa%C3%B1ol)">AUR</a>) que es un repositorio promovido por los usuarios de la comunidad de Arch.</p>
 <blockquote>
@@ -127,15 +126,15 @@ $ sudo pacman -Qdt
 </code></pre>
 <p>Finalmente les dejo el <a href="https://github.com/archlinuxfr/yaourt">Link</a> de repositorio en <strong>Github</strong>.</p>
 
-	</article>
-	<article>
-		<header class="post">
-			<a href="blog/2018/12/19/hola-mundo.html"><h1 class="post-title">Hola Mundo</h1></a>
-			<span class="post-date"><time datetime="2018-12-19">19 diciembre 2018</time></span>
-		</header>
-		<p>Primera publicación del Blog ;)</p>
+  </article>
+  <article class="post">
+    <header>
+      <a href="blog/2018/12/19/hola-mundo.html"><h1 class="post-title">Hola Mundo</h1></a>
+      <span class="post-date"><time datetime="2018-12-19">19 diciembre 2018</time></span>
+    </header>
+    <p>Primera publicación del Blog ;)</p>
 
-	</article>
+  </article>
 
 <hr />
 <p>Las publicaciones más antiguas están disponibles en el <a href="archive.html">archivo</a>.</p>
