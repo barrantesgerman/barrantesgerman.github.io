@@ -332,7 +332,7 @@ tbody tr:nth-child(odd) th {
 
 .page,
 .post {
-  /* margin-bottom: 4em;*/
+  margin-bottom: 4em;
 }
 
 /* Blog post or page title */
@@ -356,7 +356,7 @@ tbody tr:nth-child(odd) th {
 
 /* Links posts */
 .links {
-  /* margin-bottom: 4em;*/
+  margin-bottom: 4em;
 }
 .links-posts {
   padding-left: 0;

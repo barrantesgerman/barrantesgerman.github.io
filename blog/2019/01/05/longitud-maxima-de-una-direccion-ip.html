@@ -11,7 +11,6 @@
     <meta name="keywords" content="">
     <meta name="generator" content="JBake">
 
-    <!-- Le styles -->
     <link rel="stylesheet" href="/css/poole.css">
     <link rel="stylesheet" href="/css/hyde.css">
     <link rel="stylesheet" href="/css/prism.css">
@@ -29,7 +28,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-<div class="sidebar">
+<aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
@@ -40,21 +39,21 @@
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item active" href="https://www.habv.org">Inicio</a>
-			<a class="sidebar-nav-item" href="/about.html">Acerca de</a>
-			<a class="sidebar-nav-item" href="/feed.xml">Subscribirse</a>
+      <a class="sidebar-nav-item" href="/about.html">Acerca de</a>
+      <a class="sidebar-nav-item" href="/feed.xml">Subscribirse</a>
       <span class="sidebar-nav-item">Versión v1.0.0</span>
     </nav>
 
     <p>&copy; 2018. Todos los derechos reservados.</p>
   </div>
-</div>
+</aside>
 <div class="content container">
-	<article>
-		<header class="post">
-			<h1 class="post-title">Longitud máxima de una dirección IP</h1>
-			<span class="post-date"><time datetime="2019-01-05">05 enero 2019</time></span>
-		</header>
-		<p>Si estas diseñando una base de datos de un sitio WEB, y requieres almacenar en un campo de una tabla el valor de la IP de las personas que visitan el sitio, debes de especificar el tamaño máximo de ese campo, es ahí donde surge la pregunta: ¿Cuál es el tamaño máximo de una dirección IP?</p>
+  <article class="post">
+    <header>
+      <h1 class="post-title">Longitud máxima de una dirección IP</h1>
+      <span class="post-date"><time datetime="2019-01-05">05 enero 2019</time></span>
+    </header>
+    <p>Si estas diseñando una base de datos de un sitio WEB, y requieres almacenar en un campo de una tabla el valor de la IP de las personas que visitan el sitio, debes de especificar el tamaño máximo de ese campo, es ahí donde surge la pregunta: ¿Cuál es el tamaño máximo de una dirección IP?</p>
 <p>Actualmente, los protocolos más usados en Internet son <a href="http://en.wikipedia.org/wiki/IPv4">IPv4</a> u <a href="http://en.wikipedia.org/wiki/IPv6">IPv6</a>, por lo que usaremos estos como base.</p>
 <h2>IPv4</h2>
 <p>Para el caso de IPv4, la dirección esta compuesta por 32bit o 4 octetos que cumple el siguiente formato: <code>255.255.255.255</code></p>
@@ -65,7 +64,7 @@
 <h2>Solución</h2>
 <p>Es aconsejable crear el campo de al menos <strong>39 caracteres</strong> para almacenar ambos tipos de protocolos.</p>
 
-	</article>
+  </article>
 </div>
     <script src="/js/prism.js"></script>
   </body>

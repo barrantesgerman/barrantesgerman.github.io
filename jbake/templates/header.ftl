@@ -11,7 +11,6 @@
     <meta name="keywords" content="">
     <meta name="generator" content="JBake">
 
-    <!-- Le styles -->
     <link rel="stylesheet" href="/css/poole.css">
     <link rel="stylesheet" href="/css/hyde.css">
     <link rel="stylesheet" href="/css/prism.css">
