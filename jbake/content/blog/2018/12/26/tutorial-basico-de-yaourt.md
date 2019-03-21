@@ -1,7 +1,7 @@
 title=Tutorial básico de Yaourt
 date=2018-12-26
 type=post
-tags=linux, arch linux, manjaro, antergos, pacman, yaourt
+tags=linux, manjaro
 status=published
 ~~~~~~
 
