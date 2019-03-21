@@ -6,9 +6,40 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
     <language>es-cr</language>
-    <pubDate>vie, 1 mar 2019 22:18:21 -0600</pubDate>
-    <lastBuildDate>vie, 1 mar 2019 22:18:21 -0600</lastBuildDate>
+    <pubDate>mié, 20 mar 2019 21:02:31 -0600</pubDate>
+    <lastBuildDate>mié, 20 mar 2019 21:02:31 -0600</lastBuildDate>
 
+    <item>
+      <title>Descargar Legalmente Máquinas Virtuales de Windows para probar Internet Explorer y Edge</title>
+      <link>https://www.habv.org/blog/2019/03/20/descargar-legalmente-maquinas-virtuales-de-windows-para-probar-internet-explorer-y-edge.html</link>
+      <pubDate>mié, 20 mar 2019 00:00:00 -0600</pubDate>
+      <guid isPermaLink="false">blog/2019/03/20/descargar-legalmente-maquinas-virtuales-de-windows-para-probar-internet-explorer-y-edge.html</guid>
+      <description>
+&lt;p&gt;Microsoft cuenta con una página donde se pueden descargar &lt;a href=&quot;https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/&quot;&gt;Máquinas Virtuales&lt;/a&gt; con Windows versión 7, 8.1 y 10 instalado para que los desarrolladores puedan realizar pruebas de Internet Explorer de sus versiones del 8 al 11 y también Edge.&lt;/p&gt;
+&lt;p&gt;Estas imágenes de &lt;a href=&quot;https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/&quot;&gt;Máquinas Virtuales&lt;/a&gt; &lt;strong&gt;se pueden bajar gratis y legalmente&lt;/strong&gt; y se pueden usar &lt;strong&gt;por un periodo de 90 día,&lt;/strong&gt; con el único propósito de realizar pruebas sobre el navegador de Microsoft, en este &lt;a href=&quot;https://az792536.vo.msecnd.net/vms/release_notes_license_terms_8_1_15.pdf&quot;&gt;link&lt;/a&gt; se detalle los requisitos y licencia.&lt;/p&gt;
+&lt;p&gt;Indirectamente también se puede probar estas versiones de Windows ya que vienen con una instalación del sistema operativo totalmente funcional.&lt;/p&gt;
+&lt;p&gt;La imágenes de las &lt;a href=&quot;https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/&quot;&gt;Máquinas Virtuales&lt;/a&gt; se pueden descargar en el siguiente &lt;a href=&quot;https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Se recomienda usar una máquina con suficientes recursos para poder usar estas imágenes, dado por ejemplo la de Windows 10 ocupa más de 4GB en disco duro comprimida y se recomienda usar de 1 a 2GB de RAM libres para la misma.&lt;/p&gt;
+&lt;p&gt;Las Máquinas Virtuales disponibles son:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IE8 en Win7&lt;/li&gt;
+&lt;li&gt;IE9 en Win7&lt;/li&gt;
+&lt;li&gt;IE10 en Win7&lt;/li&gt;
+&lt;li&gt;IE11 en Win7&lt;/li&gt;
+&lt;li&gt;IE11 en Win8.1&lt;/li&gt;
+&lt;li&gt;MSEdge en Win10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para las plataformas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VirtualBox&lt;/li&gt;
+&lt;li&gt;Vagrant&lt;/li&gt;
+&lt;li&gt;VMWare (Windows, Mac)&lt;/li&gt;
+&lt;li&gt;HyperV (Windows)&lt;/li&gt;
+&lt;li&gt;Parallels (Mac)&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
     <item>
       <title>Longitud máxima de una dirección IP</title>
       <link>https://www.habv.org/blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html</link>
