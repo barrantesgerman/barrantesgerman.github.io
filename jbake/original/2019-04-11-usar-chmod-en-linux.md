@@ -13,11 +13,11 @@ drwxr-xr-x  2 usuario grupo  4096 mar 24 11:19  Escritorio
 
 Los primeros 10 caracteres representan los permisos, para el ejemplo anterior corresponden a:
 
-| Tipo de archivo      | Usuario | Grupo | Global | Nombre                   |
-| -------------------- | ------- | ----- | ------ | ------------------------ |
-| `l` Enlace simbólico | `rwx`   | `rwx` | `rwx`  | Datos -> /datos/usuario/ |
-| `-` Archivo          | `rw-`   | `r--` | `r--`  | ejemplo.txt              |
-| `d` Directorio       | `rwx`   | `r-x` | `r-x`  | Escritorio               |
+| Tipo de archivo      | Usuario | Grupo | Global |
+| -------------------- | ------- | ----- | ------ |
+| `l` Enlace simbólico | `rwx`   | `rwx` | `rwx`  |
+| `-` Archivo          | `rw-`   | `r--` | `r--`  |
+| `d` Directorio       | `rwx`   | `r-x` | `r-x`  |
 
 El primero corresponde al tipo de archivo. Los restantes 9 agrupados en 3 grupos de 3 letras representan los permisos del usuario, el grupo y todos los demás (global) respectivamente. Cada letra representa:
 
