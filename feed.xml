@@ -6,8 +6,8 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
     <language>es-cr</language>
-    <pubDate>jue, 11 abr 2019 20:17:24 -0600</pubDate>
-    <lastBuildDate>jue, 11 abr 2019 20:17:24 -0600</lastBuildDate>
+    <pubDate>jue, 11 abr 2019 20:43:13 -0600</pubDate>
+    <lastBuildDate>jue, 11 abr 2019 20:43:13 -0600</lastBuildDate>
 
     <item>
       <title>Usar chmod en Linux</title>
@@ -25,12 +25,12 @@ drwxr-xr-x  2 usuario grupo  4096 mar 24 11:19  Escritorio
 &lt;p&gt;Los primeros 10 caracteres representan los permisos, para el ejemplo anterior corresponden a:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
-&lt;tr&gt;&lt;th&gt; Tipo de archivo      &lt;/th&gt;&lt;th&gt; Usuario &lt;/th&gt;&lt;th&gt; Grupo &lt;/th&gt;&lt;th&gt; Global &lt;/th&gt;&lt;th&gt; Nombre                   &lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt; Tipo de archivo      &lt;/th&gt;&lt;th&gt; Usuario &lt;/th&gt;&lt;th&gt; Grupo &lt;/th&gt;&lt;th&gt; Global &lt;/th&gt;&lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr&gt;&lt;td&gt; &lt;code&gt;l&lt;/code&gt; Enlace simbólico &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;   &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;  &lt;/td&gt;&lt;td&gt; Datos -&amp;gt; /datos/usuario/ &lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt; &lt;code&gt;-&lt;/code&gt; Archivo          &lt;/td&gt;&lt;td&gt; &lt;code&gt;rw-&lt;/code&gt;   &lt;/td&gt;&lt;td&gt; &lt;code&gt;r--&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;code&gt;r--&lt;/code&gt;  &lt;/td&gt;&lt;td&gt; ejemplo.txt              &lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt; &lt;code&gt;d&lt;/code&gt; Directorio       &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;   &lt;/td&gt;&lt;td&gt; &lt;code&gt;r-x&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;code&gt;r-x&lt;/code&gt;  &lt;/td&gt;&lt;td&gt; Escritorio               &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;l&lt;/code&gt; Enlace simbólico &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;   &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;  &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;-&lt;/code&gt; Archivo          &lt;/td&gt;&lt;td&gt; &lt;code&gt;rw-&lt;/code&gt;   &lt;/td&gt;&lt;td&gt; &lt;code&gt;r--&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;code&gt;r--&lt;/code&gt;  &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;d&lt;/code&gt; Directorio       &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;   &lt;/td&gt;&lt;td&gt; &lt;code&gt;r-x&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;code&gt;r-x&lt;/code&gt;  &lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;El primero corresponde al tipo de archivo. Los restantes 9 agrupados en 3 grupos de 3 letras representan los permisos del usuario, el grupo y todos los demás (global) respectivamente. Cada letra representa:&lt;/p&gt;
