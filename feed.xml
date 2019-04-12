@@ -6,9 +6,117 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
     <language>es-cr</language>
-    <pubDate>sáb, 30 mar 2019 19:02:51 -0600</pubDate>
-    <lastBuildDate>sáb, 30 mar 2019 19:02:51 -0600</lastBuildDate>
+    <pubDate>jue, 11 abr 2019 20:17:24 -0600</pubDate>
+    <lastBuildDate>jue, 11 abr 2019 20:17:24 -0600</lastBuildDate>
 
+    <item>
+      <title>Usar chmod en Linux</title>
+      <link>https://www.habv.org/blog/2019/04/11/usar-chmod-en-linux.html</link>
+      <pubDate>jue, 11 abr 2019 00:00:00 -0600</pubDate>
+      <guid isPermaLink="false">blog/2019/04/11/usar-chmod-en-linux.html</guid>
+      <description>
+&lt;p&gt;Todos los sistemas de archivos basados en &lt;strong&gt;Unix&lt;/strong&gt;, como lo es &lt;strong&gt;Linux&lt;/strong&gt;, manejan tres tipos de permisos: lectura, escritura y ejecución. Los mismos se otorgan a tres categorías posibles: el usuario (&lt;em&gt;usuario&lt;/em&gt;), el grupo al que pertenece el usuario (&lt;em&gt;grupo&lt;/em&gt;) y todos los demás usuarios del sistema (&lt;em&gt;global&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;Para ver los permisos de una carpeta podemos ejecutar el comando &lt;code&gt;ls -l&lt;/code&gt; en un terminal y obtener una salida como la siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ ls -l
+lrwxrwxrwx  1 usuario grupo    14 may 21  2018  Datos -&amp;gt; /datos/usuario/
+-rw-r--r--  1 usuario grupo     0 abr 11 17:11  ejemplo.txt
+drwxr-xr-x  2 usuario grupo  4096 mar 24 11:19  Escritorio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Los primeros 10 caracteres representan los permisos, para el ejemplo anterior corresponden a:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th&gt; Tipo de archivo      &lt;/th&gt;&lt;th&gt; Usuario &lt;/th&gt;&lt;th&gt; Grupo &lt;/th&gt;&lt;th&gt; Global &lt;/th&gt;&lt;th&gt; Nombre                   &lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;l&lt;/code&gt; Enlace simbólico &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;   &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;  &lt;/td&gt;&lt;td&gt; Datos -&amp;gt; /datos/usuario/ &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;-&lt;/code&gt; Archivo          &lt;/td&gt;&lt;td&gt; &lt;code&gt;rw-&lt;/code&gt;   &lt;/td&gt;&lt;td&gt; &lt;code&gt;r--&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;code&gt;r--&lt;/code&gt;  &lt;/td&gt;&lt;td&gt; ejemplo.txt              &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;d&lt;/code&gt; Directorio       &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;   &lt;/td&gt;&lt;td&gt; &lt;code&gt;r-x&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;code&gt;r-x&lt;/code&gt;  &lt;/td&gt;&lt;td&gt; Escritorio               &lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;El primero corresponde al tipo de archivo. Los restantes 9 agrupados en 3 grupos de 3 letras representan los permisos del usuario, el grupo y todos los demás (global) respectivamente. Cada letra representa:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;r&lt;/code&gt; Lectura (&lt;strong&gt;r&lt;/strong&gt;ead)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;w&lt;/code&gt; Escritura (&lt;strong&gt;w&lt;/strong&gt;rite)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;x&lt;/code&gt; Ejecución (e&lt;strong&gt;x&lt;/strong&gt;ecute)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ya comprendido lo anterior, la sintaxis a seguir para asignar permisos a un archivo o directorio es la siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ chmod [u,g,o,a][+,-,=][r,w,x] archivo_o_directorio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Donde los parámetros corresponden a:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th&gt; Parámetro &lt;/th&gt;&lt;th&gt; Significado &lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;u&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Usuario     &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;g&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Grupo       &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;o&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Global      &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;a&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Todos       &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;+&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Otorgar     &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;-&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Revocar     &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;=&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Copiar      &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;r&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Lectura     &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;w&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Escritura   &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; &lt;code&gt;x&lt;/code&gt;       &lt;/td&gt;&lt;td&gt; Ejecución   &lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Por ejemplo, si un usuario quiere otorgarle permisos de escritura al archivo &lt;em&gt;ejemplo.txt&lt;/em&gt; a todos los usuarios de su mismo grupo, debe ejecutar &lt;code&gt;chmod&lt;/code&gt; con los parámetros &lt;code&gt;g+w&lt;/code&gt; de la siguiente manera:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ chmod g+w ejemplo.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para revocar el permiso se cambiar el parámetro por &lt;code&gt;g-w&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ chmod g-w ejemplo.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si lo que desea es que el grupo tenga los mismos permisos que el usuario sobre el directorio &lt;em&gt;Escritorio&lt;/em&gt;, debe ejecutar &lt;code&gt;chmod&lt;/code&gt; con los parámetros &lt;code&gt;g=u&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ chmod g=u Escritorio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si se indica la categoría &lt;code&gt;a&lt;/code&gt; o no se indica ninguna categoría, el permisos se aplica a todas las categorías:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# Se otorga permiso de ejecución a usuario, grupo y global
+$ chmod a+x ejemplo.txt
+# Equivalente a
+$ chmod +x ejemplo.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Se pueden especificar diferentes permisos al mismo tiempo utilizando coma:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ chmod g+w,o-rw,a+x ejemplo.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y se pueden aplicar permisos recursivamente utilizando el parámetro &lt;code&gt;-R&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ chmod -R +r Escritorio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El anterior ejemplo, le otorga permisos de lectura al directorio &lt;em&gt;Escritorio&lt;/em&gt; al igual que a todo su contenido.&lt;/p&gt;
+&lt;p&gt;Otro método de establecer permisos es mediante el uso de la &lt;strong&gt;notación octal&lt;/strong&gt;, la cual consiste en representar los 3 permisos (lectura, escritura y ejecución) en binario, donde 0 es que no tiene el permiso y 1 que si tiene el permiso y pasarlos luego a su representación en base 8, utilizando los dígitos del 0 al 7.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th&gt; Binario &lt;/th&gt;&lt;th&gt; Octal &lt;/th&gt;&lt;th&gt; Permiso &lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt; 000     &lt;/td&gt;&lt;td&gt; 0     &lt;/td&gt;&lt;td&gt; &lt;code&gt;---&lt;/code&gt;   &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 001     &lt;/td&gt;&lt;td&gt; 1     &lt;/td&gt;&lt;td&gt; &lt;code&gt;--x&lt;/code&gt;   &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 010     &lt;/td&gt;&lt;td&gt; 2     &lt;/td&gt;&lt;td&gt; &lt;code&gt;-w-&lt;/code&gt;   &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 011     &lt;/td&gt;&lt;td&gt; 3     &lt;/td&gt;&lt;td&gt; &lt;code&gt;-wx&lt;/code&gt;   &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 100     &lt;/td&gt;&lt;td&gt; 4     &lt;/td&gt;&lt;td&gt; &lt;code&gt;r--&lt;/code&gt;   &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 101     &lt;/td&gt;&lt;td&gt; 5     &lt;/td&gt;&lt;td&gt; &lt;code&gt;r-x&lt;/code&gt;   &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 110     &lt;/td&gt;&lt;td&gt; 6     &lt;/td&gt;&lt;td&gt; &lt;code&gt;rw-&lt;/code&gt;   &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 111     &lt;/td&gt;&lt;td&gt; 7     &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwx&lt;/code&gt;   &lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;La sintaxis de la notación octal sería igual a la anterior, remplazado los parámetros por el valor octal:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ chmod 750 ejemplo.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Así por ejemplo el parámetro &lt;code&gt;750&lt;/code&gt; significa que el usuario tiene permisos &lt;code&gt;rwx&lt;/code&gt;, el grupo tiene permisos &lt;code&gt;r-x&lt;/code&gt; y los otros no tiene permisos &lt;code&gt;---&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Las notaciones octales más frecuentes son:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th&gt; Octal &lt;/th&gt;&lt;th&gt; Permisos                                                     &lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt; 777   &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwxrwxrwx&lt;/code&gt; Todos tienen todos los permisos                  &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 755   &lt;/td&gt;&lt;td&gt; &lt;code&gt;rwxr-xr-x&lt;/code&gt; Usuario tiene todos los permisos, los demás solo leer y ejecutar &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 644   &lt;/td&gt;&lt;td&gt; &lt;code&gt;rw-r--r--&lt;/code&gt; Usuario puede leer y escribir, los demás solo leer &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 600   &lt;/td&gt;&lt;td&gt; &lt;code&gt;rw-------&lt;/code&gt; Usuario puede leer y escribir, los demás sin permisos &lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
     <item>
       <title>Descargar Legalmente Máquinas Virtuales de Windows para probar Internet Explorer y Edge</title>
       <link>https://www.habv.org/blog/2019/03/20/descargar-legalmente-maquinas-virtuales-de-windows-para-probar-internet-explorer-y-edge.html</link>
@@ -48,13 +156,13 @@
       <description>
 &lt;p&gt;Si estas diseñando una base de datos de un sitio WEB, y requieres almacenar en un campo de una tabla el valor de la IP de las personas que visitan el sitio, debes de especificar el tamaño máximo de ese campo, es ahí donde surge la pregunta: ¿Cuál es el tamaño máximo de una dirección IP?&lt;/p&gt;
 &lt;p&gt;Actualmente, los protocolos más usados en Internet son &lt;a href=&quot;http://en.wikipedia.org/wiki/IPv4&quot;&gt;IPv4&lt;/a&gt; u &lt;a href=&quot;http://en.wikipedia.org/wiki/IPv6&quot;&gt;IPv6&lt;/a&gt;, por lo que usaremos estos como base.&lt;/p&gt;
-&lt;h2&gt;IPv4&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&quot;#ipv4&quot; id=&quot;ipv4&quot;&gt;IPv4&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Para el caso de IPv4, la dirección esta compuesta por 32bit o 4 octetos que cumple el siguiente formato: &lt;code&gt;255.255.255.255&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Por lo que la dirección ocupará una &lt;strong&gt;longitud máxima 15 caracteres&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2&gt;IPv6&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&quot;#ipv6&quot; id=&quot;ipv6&quot;&gt;IPv6&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Por su parte, IPv6 esta compuesta por 64bit de prefijo de red y 64bit de dirección, separados por el signo : (dos puntos), y cumple el siguiente formato: &lt;code&gt;2001:0db8:85a3:0000:0000:8a2e:0370:7334&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Por lo que la dirección ocupará una &lt;strong&gt;longitud máxima de 39 caracteres&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2&gt;Solución&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&quot;#solución&quot; id=&quot;solución&quot;&gt;Solución&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Es aconsejable crear el campo de al menos &lt;strong&gt;39 caracteres&lt;/strong&gt; para almacenar ambos tipos de protocolos.&lt;/p&gt;
 
       </description>
@@ -65,21 +173,21 @@
       <pubDate>mié, 26 dic 2018 00:00:00 -0600</pubDate>
       <guid isPermaLink="false">blog/2018/12/26/tutorial-basico-de-yaourt.html</guid>
       <description>
-&lt;h2&gt;¿Qué es Yaourt?&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&quot;#qué-es-yaourt&quot; id=&quot;qué-es-yaourt&quot;&gt;¿Qué es Yaourt?&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;yaourt&lt;/code&gt; (&lt;em&gt;Yet AnOther User Repository Tool&lt;/em&gt;, &lt;strong&gt;Yogurt&lt;/strong&gt; en francés) es un programa de interfaz de línea de comandos que completa &lt;code&gt;pacman&lt;/code&gt; para la instalar software en Archlinux y derivadas.&lt;/p&gt;
 &lt;p&gt;A diferencia de &lt;code&gt;pacman&lt;/code&gt; que instala paquetes solamente de los repositorios oficiales, &lt;code&gt;yaourt&lt;/code&gt; permite instalar paquetes desde &lt;strong&gt;Arch User Repository&lt;/strong&gt; (&lt;a href=&quot;https://wiki.archlinux.org/index.php/Arch_User_Repository_(Espa%C3%B1ol)&quot;&gt;AUR&lt;/a&gt;) que es un repositorio promovido por los usuarios de la comunidad de Arch.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Actualmente, el proyecto se encuentra descontinuado, por lo que se recomiendan otras herramientas similares como  &lt;a href=&quot;https://github.com/polygamma/aurman&quot;&gt;aurman&lt;/a&gt;, &lt;a href=&quot;https://github.com/kitsunyan/pakku&quot;&gt;pakku&lt;/a&gt; o &lt;a href=&quot;https://github.com/Jguer/yay&quot;&gt;yay&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2&gt;Como instalar&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&quot;#como-instalar&quot; id=&quot;como-instalar&quot;&gt;Como instalar&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;yaourt&lt;/code&gt; se puede instalar desde &lt;code&gt;pacman&lt;/code&gt; ejecutando:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ sudo pacman -Syy
 $ sudo pacman -S yaourt
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Uso básico&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&quot;#uso-básico&quot; id=&quot;uso-básico&quot;&gt;Uso básico&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Una de las ventajas que tiene &lt;code&gt;yaourt&lt;/code&gt; es que no requiere iniciar la orden con &lt;code&gt;sudo&lt;/code&gt; a diferencia de &lt;code&gt;pacman&lt;/code&gt;, sino que nos solicitará los privilegios de administrador solo si los requiere.&lt;/p&gt;
 &lt;p&gt;Ahora bien, esta es una lista de comandos básicos comparados contra los tradicionales comandos de &lt;code&gt;pacman&lt;/code&gt;:&lt;/p&gt;
-&lt;h3&gt;Buscar paquetes&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;#buscar-paquetes&quot; id=&quot;buscar-paquetes&quot;&gt;Buscar paquetes&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Se pueden buscar paquetes o grupos de paquetes por su nombre, y nos retornará una lista con todos los resultados encontrados para el nombre de paquete indicado.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
 $ yaourt -Ss paquete
@@ -88,7 +196,7 @@ $ yaourt paquete
 # con pacman
 $ sudo pacman -Ss paquete
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Actualizar sistema&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;#actualizar-sistema&quot; id=&quot;actualizar-sistema&quot;&gt;Actualizar sistema&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Se pueden actualizar todos los paquetes del sistema a sus versiones más actualizadas.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
 $ yaourt -Syyu
@@ -97,21 +205,21 @@ $ yaourt -Syyua
 # con pacman
 $ sudo pacman -Syyu
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Instalar/reinstalar paquete&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;#instalarreinstalar-paquete&quot; id=&quot;instalarreinstalar-paquete&quot;&gt;Instalar/reinstalar paquete&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Ya identificado el paquete que se quiere instalar, simplemente se debe ejecutar el siguiente comando, el cual se encargará no solo de instalarlo, sino instalar todas las dependencias requeridas para su funcionamiento.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
 $ yaourt -S paquete
 # con pacman
 $ sudo pacman -S paquete
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Eliminar paquetes y sus dependencias&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;#eliminar-paquetes-y-sus-dependencias&quot; id=&quot;eliminar-paquetes-y-sus-dependencias&quot;&gt;Eliminar paquetes y sus dependencias&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Si por algún motivo ya no se requiere o desea tener un paquete instalado, se pude ejecutar el siguiente comando para eliminar el paquete y todas las dependencias y configuraciones que fueron instaladas con él.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
 $ yaourt -Rnsc paquete
 # con pacman
 $ sudo pacman -Rnsc paquete
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Buscar paquetes huérfanos&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;#buscar-paquetes-huérfanos&quot; id=&quot;buscar-paquetes-huérfanos&quot;&gt;Buscar paquetes huérfanos&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;En algunas ocasiones quedan paquetes huérfanos, los cuales son paquetes que fueron instalados como dependencias de otros paquetes que posteriormente fueron eliminados, sin embargo, no se eliminaron sus dependencias y ya no son dependencias de ningún otro paquete, por lo que ya no son necesarios.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# con yaourt
 $ yaourt -Qdt
