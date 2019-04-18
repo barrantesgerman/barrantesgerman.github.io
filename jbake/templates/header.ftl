@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>HABV</#if></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
