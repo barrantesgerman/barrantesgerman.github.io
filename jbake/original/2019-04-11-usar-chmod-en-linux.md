@@ -2,7 +2,7 @@
 
 Todos los sistemas de archivos basados en **Unix**, como lo es **Linux**, manejan tres tipos de permisos: lectura, escritura y ejecución. Los mismos se otorgan a tres categorías posibles: el usuario (*usuario*), el grupo al que pertenece el usuario (*grupo*) y todos los demás usuarios del sistema (*global*).
 
-Para ver los permisos de una carpeta podemos ejecutar el comando `ls -l` en un terminal y obtener una salida como la siguiente:
+Para ver los permisos de un directorio podemos ejecutar el comando `ls -l` en un terminal y obtener una salida como la siguiente:
 
 ```bash
 $ ls -l
@@ -64,7 +64,7 @@ Si lo que desea es que el grupo tenga los mismos permisos que el usuario sobre e
 $ chmod g=u Escritorio
 ```
 
-Si se indica la categoría `a` o no se indica ninguna categoría, el permisos se aplica a todas las categorías:
+Si se indica la categoría `a` o no se indica ninguna categoría, los permisos se aplica a todas las categorías:
 
 ```bash
 # Se otorga permiso de ejecución a usuario, grupo y global

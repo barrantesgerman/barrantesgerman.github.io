@@ -54,7 +54,7 @@
       <span class="post-date"><time datetime="2019-04-11">11 abril 2019</time></span>
     </header>
     <p>Todos los sistemas de archivos basados en <strong>Unix</strong>, como lo es <strong>Linux</strong>, manejan tres tipos de permisos: lectura, escritura y ejecución. Los mismos se otorgan a tres categorías posibles: el usuario (<em>usuario</em>), el grupo al que pertenece el usuario (<em>grupo</em>) y todos los demás usuarios del sistema (<em>global</em>).</p>
-<p>Para ver los permisos de una carpeta podemos ejecutar el comando <code>ls -l</code> en un terminal y obtener una salida como la siguiente:</p>
+<p>Para ver los permisos de un directorio podemos ejecutar el comando <code>ls -l</code> en un terminal y obtener una salida como la siguiente:</p>
 <pre><code class="language-bash">$ ls -l
 lrwxrwxrwx  1 usuario grupo    14 may 21  2018  Datos -&gt; /datos/usuario/
 -rw-r--r--  1 usuario grupo     0 abr 11 17:11  ejemplo.txt
@@ -107,7 +107,7 @@ drwxr-xr-x  2 usuario grupo  4096 mar 24 11:19  Escritorio
 <p>Si lo que desea es que el grupo tenga los mismos permisos que el usuario sobre el directorio <em>Escritorio</em>, debe ejecutar <code>chmod</code> con los parámetros <code>g=u</code>:</p>
 <pre><code class="language-bash">$ chmod g=u Escritorio
 </code></pre>
-<p>Si se indica la categoría <code>a</code> o no se indica ninguna categoría, el permisos se aplica a todas las categorías:</p>
+<p>Si se indica la categoría <code>a</code> o no se indica ninguna categoría, los permisos se aplica a todas las categorías:</p>
 <pre><code class="language-bash"># Se otorga permiso de ejecución a usuario, grupo y global
 $ chmod a+x ejemplo.txt
 # Equivalente a

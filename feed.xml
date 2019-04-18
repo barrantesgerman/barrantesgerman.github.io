@@ -6,8 +6,8 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
     <language>es-cr</language>
-    <pubDate>jue, 18 abr 2019 11:43:12 -0600</pubDate>
-    <lastBuildDate>jue, 18 abr 2019 11:43:12 -0600</lastBuildDate>
+    <pubDate>jue, 18 abr 2019 11:51:13 -0600</pubDate>
+    <lastBuildDate>jue, 18 abr 2019 11:51:13 -0600</lastBuildDate>
 
     <item>
       <title>Usar chmod en Linux</title>
@@ -16,7 +16,7 @@
       <guid isPermaLink="false">blog/2019/04/11/usar-chmod-en-linux.html</guid>
       <description>
 &lt;p&gt;Todos los sistemas de archivos basados en &lt;strong&gt;Unix&lt;/strong&gt;, como lo es &lt;strong&gt;Linux&lt;/strong&gt;, manejan tres tipos de permisos: lectura, escritura y ejecución. Los mismos se otorgan a tres categorías posibles: el usuario (&lt;em&gt;usuario&lt;/em&gt;), el grupo al que pertenece el usuario (&lt;em&gt;grupo&lt;/em&gt;) y todos los demás usuarios del sistema (&lt;em&gt;global&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;Para ver los permisos de una carpeta podemos ejecutar el comando &lt;code&gt;ls -l&lt;/code&gt; en un terminal y obtener una salida como la siguiente:&lt;/p&gt;
+&lt;p&gt;Para ver los permisos de un directorio podemos ejecutar el comando &lt;code&gt;ls -l&lt;/code&gt; en un terminal y obtener una salida como la siguiente:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ ls -l
 lrwxrwxrwx  1 usuario grupo    14 may 21  2018  Datos -&amp;gt; /datos/usuario/
 -rw-r--r--  1 usuario grupo     0 abr 11 17:11  ejemplo.txt
@@ -69,7 +69,7 @@ drwxr-xr-x  2 usuario grupo  4096 mar 24 11:19  Escritorio
 &lt;p&gt;Si lo que desea es que el grupo tenga los mismos permisos que el usuario sobre el directorio &lt;em&gt;Escritorio&lt;/em&gt;, debe ejecutar &lt;code&gt;chmod&lt;/code&gt; con los parámetros &lt;code&gt;g=u&lt;/code&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ chmod g=u Escritorio
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si se indica la categoría &lt;code&gt;a&lt;/code&gt; o no se indica ninguna categoría, el permisos se aplica a todas las categorías:&lt;/p&gt;
+&lt;p&gt;Si se indica la categoría &lt;code&gt;a&lt;/code&gt; o no se indica ninguna categoría, los permisos se aplica a todas las categorías:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# Se otorga permiso de ejecución a usuario, grupo y global
 $ chmod a+x ejemplo.txt
 # Equivalente a
