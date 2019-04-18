@@ -14,6 +14,6 @@
       <span class="sidebar-nav-item">Versión v1.0.0</span>
     </nav>
 
-    <p>&copy; 2018. Todos los derechos reservados.</p>
+    <p>&copy; ${.now?string('yyyy')}. Todos los derechos reservados.</p>
   </div>
 </aside>
