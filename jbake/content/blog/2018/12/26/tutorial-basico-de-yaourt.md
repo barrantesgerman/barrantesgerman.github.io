@@ -15,12 +15,11 @@ A diferencia de `pacman` que instala paquetes solamente de los repositorios ofic
 
 ## Como instalar
 
-`yaourt` se puede instalar desde `pacman` ejecutando:
+<del>`yaourt` se puede instalar desde `pacman` ejecutando: `$ sudo pacman -S yaourt`</del>
 
-```bash
-$ sudo pacman -Syy
-$ sudo pacman -S yaourt
-```
+**[Actualización 19/04/2019]**
+
+> `yaourt` ya no se encuentra dentro de los repositorios oficiales de **Manjaro Linux** por lo que no se puede instalar directamente mediante el uso de `pacman`, se recomienda el uso de otras herramientas similares, sin embargo, aún existe la posibilidad de instalarlo siguiendo la guía de [LinOxide](https://linoxide.com/linux-how-to/install-yaourt-arch-linux-2018/ "LinOxide").
 
 ## Uso básico
 
