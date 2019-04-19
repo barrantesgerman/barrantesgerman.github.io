@@ -6,8 +6,8 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
     <language>es-cr</language>
-    <pubDate>vie, 19 abr 2019 12:14:25 -0600</pubDate>
-    <lastBuildDate>vie, 19 abr 2019 12:14:25 -0600</lastBuildDate>
+    <pubDate>vie, 19 abr 2019 13:48:23 -0600</pubDate>
+    <lastBuildDate>vie, 19 abr 2019 13:48:23 -0600</lastBuildDate>
 
     <item>
       <title>Usar chmod en Linux</title>
@@ -181,10 +181,11 @@ $ chmod +x ejemplo.txt
 &lt;p&gt;Actualmente, el proyecto se encuentra descontinuado, por lo que se recomiendan otras herramientas similares como  &lt;a href=&quot;https://github.com/polygamma/aurman&quot;&gt;aurman&lt;/a&gt;, &lt;a href=&quot;https://github.com/kitsunyan/pakku&quot;&gt;pakku&lt;/a&gt; o &lt;a href=&quot;https://github.com/Jguer/yay&quot;&gt;yay&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;Como instalar&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;yaourt&lt;/code&gt; se puede instalar desde &lt;code&gt;pacman&lt;/code&gt; ejecutando:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ sudo pacman -Syy
-$ sudo pacman -S yaourt
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;del&gt;&lt;code&gt;yaourt&lt;/code&gt; se puede instalar desde &lt;code&gt;pacman&lt;/code&gt; ejecutando: &lt;code&gt;$ sudo pacman -S yaourt&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[Actualización 19/04/2019]&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;yaourt&lt;/code&gt; ya no se encuentra dentro de los repositorios oficiales de &lt;strong&gt;Manjaro Linux&lt;/strong&gt; por lo que no se puede instalar directamente mediante el uso de &lt;code&gt;pacman&lt;/code&gt;, se recomienda el uso de otras herramientas similares, sin embargo, aún existe la posibilidad de instalarlo siguiendo la guía de &lt;a href=&quot;https://linoxide.com/linux-how-to/install-yaourt-arch-linux-2018/&quot; title=&quot;LinOxide&quot;&gt;LinOxide&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2&gt;Uso básico&lt;/h2&gt;
 &lt;p&gt;Una de las ventajas que tiene &lt;code&gt;yaourt&lt;/code&gt; es que no requiere iniciar la orden con &lt;code&gt;sudo&lt;/code&gt; a diferencia de &lt;code&gt;pacman&lt;/code&gt;, sino que nos solicitará los privilegios de administrador solo si los requiere.&lt;/p&gt;
 &lt;p&gt;Ahora bien, esta es una lista de comandos básicos comparados contra los tradicionales comandos de &lt;code&gt;pacman&lt;/code&gt;:&lt;/p&gt;
