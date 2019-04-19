@@ -6,8 +6,8 @@
     <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
     <language>es-cr</language>
-    <pubDate>jue, 18 abr 2019 12:41:00 -0600</pubDate>
-    <lastBuildDate>jue, 18 abr 2019 12:41:00 -0600</lastBuildDate>
+    <pubDate>vie, 19 abr 2019 12:14:25 -0600</pubDate>
+    <lastBuildDate>vie, 19 abr 2019 12:14:25 -0600</lastBuildDate>
 
     <item>
       <title>Usar chmod en Linux</title>
@@ -114,6 +114,7 @@ $ chmod +x ejemplo.txt
 &lt;tr&gt;&lt;td&gt; 600   &lt;/td&gt;&lt;td&gt; &lt;code&gt;rw-------&lt;/code&gt; Usuario puede leer y escribir, los demás sin permisos &lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;&lt;a href=&quot;https://asciinema.org/a/doQmFsySVkKizAjD5L9zxWa29&quot;&gt;&lt;img src=&quot;https://asciinema.org/a/doQmFsySVkKizAjD5L9zxWa29.svg&quot; alt=&quot;asciicast&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
