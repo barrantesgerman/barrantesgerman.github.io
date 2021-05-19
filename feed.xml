@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HABV</title>
-    <link>https://www.habv.org</link>
-    <atom:link href="https://www.habv.org/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.hermanbarrantes.dev/</link>
+    <atom:link href="https://www.hermanbarrantes.dev//feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog personal de Herman Barrantes sobre Java, Linux, Tecnología y Cultura Geek.</description>
     <language>es-cr</language>
-    <pubDate>vie, 19 abr 2019 13:48:23 -0600</pubDate>
-    <lastBuildDate>vie, 19 abr 2019 13:48:23 -0600</lastBuildDate>
+    <pubDate>mié., 19 may. 2021 08:35:01 -0600</pubDate>
+    <lastBuildDate>mié., 19 may. 2021 08:35:01 -0600</lastBuildDate>
 
     <item>
       <title>Usar chmod en Linux</title>
-      <link>https://www.habv.org/blog/2019/04/11/usar-chmod-en-linux.html</link>
-      <pubDate>jue, 11 abr 2019 00:00:00 -0600</pubDate>
+      <link>https://www.hermanbarrantes.dev//blog/2019/04/11/usar-chmod-en-linux.html</link>
+      <pubDate>jue., 11 abr. 2019 00:00:00 -0600</pubDate>
       <guid isPermaLink="false">blog/2019/04/11/usar-chmod-en-linux.html</guid>
       <description>
 &lt;p&gt;Todos los sistemas de archivos basados en &lt;strong&gt;Unix&lt;/strong&gt;, como lo es &lt;strong&gt;Linux&lt;/strong&gt;, manejan tres tipos de permisos: lectura, escritura y ejecución. Los mismos se otorgan a tres categorías posibles: el usuario (&lt;em&gt;usuario&lt;/em&gt;), el grupo al que pertenece el usuario (&lt;em&gt;grupo&lt;/em&gt;) y todos los demás usuarios del sistema (&lt;em&gt;global&lt;/em&gt;).&lt;/p&gt;
@@ -120,8 +120,8 @@ $ chmod +x ejemplo.txt
     </item>
     <item>
       <title>Descargar Legalmente Máquinas Virtuales de Windows para probar Internet Explorer y Edge</title>
-      <link>https://www.habv.org/blog/2019/03/20/descargar-legalmente-maquinas-virtuales-de-windows-para-probar-internet-explorer-y-edge.html</link>
-      <pubDate>mié, 20 mar 2019 00:00:00 -0600</pubDate>
+      <link>https://www.hermanbarrantes.dev//blog/2019/03/20/descargar-legalmente-maquinas-virtuales-de-windows-para-probar-internet-explorer-y-edge.html</link>
+      <pubDate>mié., 20 mar. 2019 00:00:00 -0600</pubDate>
       <guid isPermaLink="false">blog/2019/03/20/descargar-legalmente-maquinas-virtuales-de-windows-para-probar-internet-explorer-y-edge.html</guid>
       <description>
 &lt;p&gt;Microsoft cuenta con una página donde se pueden descargar &lt;a href=&quot;https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/&quot;&gt;Máquinas Virtuales&lt;/a&gt; con Windows versión 7, 8.1 y 10 instalado para que los desarrolladores puedan realizar pruebas de Internet Explorer de sus versiones del 8 al 11 y también Edge.&lt;/p&gt;
@@ -151,8 +151,8 @@ $ chmod +x ejemplo.txt
     </item>
     <item>
       <title>Longitud máxima de una dirección IP</title>
-      <link>https://www.habv.org/blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html</link>
-      <pubDate>sáb, 5 ene 2019 00:00:00 -0600</pubDate>
+      <link>https://www.hermanbarrantes.dev//blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html</link>
+      <pubDate>sáb., 5 ene. 2019 00:00:00 -0600</pubDate>
       <guid isPermaLink="false">blog/2019/01/05/longitud-maxima-de-una-direccion-ip.html</guid>
       <description>
 &lt;p&gt;Si estas diseñando una base de datos de un sitio WEB, y requieres almacenar en un campo de una tabla el valor de la IP de las personas que visitan el sitio, debes de especificar el tamaño máximo de ese campo, es ahí donde surge la pregunta: ¿Cuál es el tamaño máximo de una dirección IP?&lt;/p&gt;
@@ -170,8 +170,8 @@ $ chmod +x ejemplo.txt
     </item>
     <item>
       <title>Tutorial básico de Yaourt</title>
-      <link>https://www.habv.org/blog/2018/12/26/tutorial-basico-de-yaourt.html</link>
-      <pubDate>mié, 26 dic 2018 00:00:00 -0600</pubDate>
+      <link>https://www.hermanbarrantes.dev//blog/2018/12/26/tutorial-basico-de-yaourt.html</link>
+      <pubDate>mié., 26 dic. 2018 00:00:00 -0600</pubDate>
       <guid isPermaLink="false">blog/2018/12/26/tutorial-basico-de-yaourt.html</guid>
       <description>
 &lt;h2&gt;¿Qué es Yaourt?&lt;/h2&gt;
@@ -234,8 +234,8 @@ $ sudo pacman -Qdt
     </item>
     <item>
       <title>Hola Mundo</title>
-      <link>https://www.habv.org/blog/2018/12/19/hola-mundo.html</link>
-      <pubDate>mié, 19 dic 2018 00:00:00 -0600</pubDate>
+      <link>https://www.hermanbarrantes.dev//blog/2018/12/19/hola-mundo.html</link>
+      <pubDate>mié., 19 dic. 2018 00:00:00 -0600</pubDate>
       <guid isPermaLink="false">blog/2018/12/19/hola-mundo.html</guid>
       <description>
 &lt;p&gt;Primera publicación del Blog ;)&lt;/p&gt;
